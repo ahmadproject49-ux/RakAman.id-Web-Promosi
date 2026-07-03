@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>RakAman.id - Digital Expiry Assistant (Android App)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{
+    --mint:#eafcf3;
+    --green-900:#064e3b;
+    --green-700:#047857;
+    --green-600:#059669;
+    --green-500:#10b981;
+    --ink:#111827;
+  }
+  html{ -webkit-text-size-adjust:100%; }
+  body{ font-family:'Inter',sans-serif; color:var(--ink); background:#fff; overflow-x:hidden; }
+  .display{ font-family:'Poppins',sans-serif; }
+  img{ max-width:100%; height:auto; display:block; object-fit:contain; }
+</style>
+</head>
+<body class="antialiased">
+
+  <!-- HERO -->
+  <header class="relative overflow-visible" style="background:var(--mint);">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 md:px-10 pt-12 md:pt-16 pb-8 md:pb-12 grid md:grid-cols-2 gap-8 md:gap-10 items-start md:items-center">
+      <div class="text-center md:text-left">
+        <h1 class="display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] text-slate-900 tracking-tight">
+          RakAman<span class="text-slate-900">.id</span><br>
+          <span style="color:var(--green-500);">Android App</span>
+        </h1>
+        <p class="mt-5 md:mt-6 text-slate-600 font-semibold text-base md:text-lg">Digital Expiry Assistant &mdash; Basic App</p>
+        <p class="mt-3 text-slate-500 text-sm max-w-md mx-auto md:mx-0 leading-relaxed">Catat dan pantau tanggal kedaluwarsa obat, makanan, skincare, hingga dokumen penting Anda. Ringan, tanpa akun, langsung terpasang di HP Android.</p>
+
+        <a href="#download" class="mt-7 md:mt-8 inline-flex items-center gap-4 bg-white rounded-full pl-6 md:pl-7 pr-2 py-2 shadow-md hover:shadow-lg transition">
+          <span class="font-bold text-slate-900 text-sm md:text-base">Download Sekarang</span>
+          <span class="w-10 h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-white shrink-0" style="background:var(--green-600);">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M5 20h14"/></svg>
+          </span>
+        </a>
+        <p class="mt-4 text-xs text-slate-400 font-medium">📦 File .apk &middot; Tanpa login &middot; Data tersimpan aman di HP Anda</p>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <img src="hero-phone.png" alt="Tampilan awal aplikasi RakAman.id" class="w-[240px] sm:w-[280px] md:w-[300px] lg:w-[340px]">
+      </div>
+    </div>
+    <div class="h-8 md:h-16"></div>
+  </header>
+
+  <!-- TATA CARA PENGGUNAAN -->
+  <section id="tutorial">
+    <div class="text-center pt-12 md:pt-16 pb-8 md:pb-10 px-5" style="background:var(--mint);">
+      <h2 class="display font-extrabold text-2xl sm:text-3xl md:text-4xl text-slate-900">Tata Cara <span style="color:var(--green-500);">Penggunaan</span></h2>
+      <div class="w-14 h-1 rounded-full mx-auto mt-4" style="background:var(--green-500);"></div>
+    </div>
+
+    <div class="relative pb-14 md:pb-16" style="background:linear-gradient(180deg,var(--green-600),var(--green-700));">
+      <p class="md:hidden text-center text-green-100 text-xs pt-4 pb-2">◄ Geser untuk lihat semua langkah ►</p>
+      <div class="overflow-x-auto md:overflow-visible px-4">
+        <img src="tutorial-steps.png" alt="Alur penggunaan aplikasi RakAman: sambutan, rak kosong, tambah barang, dashboard"
+             class="mx-auto min-w-[780px] md:min-w-0 md:w-full max-w-4xl rounded-2xl">
+      </div>
+
+      <div class="max-w-3xl mx-auto px-5 sm:px-6 pt-10 space-y-5 text-green-50 text-sm leading-relaxed">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-7 h-7 bg-white/15 text-white font-bold rounded-full flex items-center justify-center text-xs">1</div>
+          <p><b class="text-white">Buka Aplikasi &amp; Tambah Barang</b> &mdash; Ketuk tombol <b>Tambah Barang (+)</b>, isi nama produk, kategori (Obat, Makanan, Skincare, Dokumen), dan tanggal kedaluwarsanya.</p>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-7 h-7 bg-white/15 text-white font-bold rounded-full flex items-center justify-center text-xs">2</div>
+          <p><b class="text-white">Pantau Status di Dashboard</b> &mdash; Barang otomatis terurut dari yang paling dekat kedaluwarsa, lengkap dengan indikator warna status.</p>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-7 h-7 bg-white/15 text-white font-bold rounded-full flex items-center justify-center text-xs">3</div>
+          <p><b class="text-white">Dapatkan Notifikasi &amp; Ringkasan</b> &mdash; Aplikasi mengingatkan Anda secara berkala agar produk sempat digunakan atau diperpanjang sebelum kedaluwarsa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download" class="max-w-5xl mx-auto px-5 sm:px-6 py-16 md:py-20">
+    <div class="text-center mb-8 md:mb-10">
+      <p class="font-semibold text-xs uppercase tracking-widest mb-2" style="color:var(--green-600);">Mulai Sekarang</p>
+      <h2 class="display font-extrabold text-2xl md:text-3xl text-slate-900">Unduh Aplikasi Android</h2>
+      <p class="text-slate-500 mt-2 text-sm max-w-md mx-auto">File resmi RakAman dalam format .APK, ringan dan siap dipasang langsung di HP Anda.</p>
+    </div>
+
+    <div class="max-w-xl mx-auto bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 md:p-10 shadow-sm">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="bg-green-50 p-3.5 sm:p-4 rounded-2xl text-green-600 shrink-0">
+          <svg class="w-8 h-8 sm:w-9 sm:h-9" fill="currentColor" viewBox="0 0 24 24"><path d="M16.63 21.9a1 1 0 0 1-.74-.32l-2.39-2.55-2.39 2.55a1 1 0 0 1-1.48 0 1.05 1.05 0 0 1 0-1.45l2.43-2.6-2.43-2.59a1.05 1.05 0 0 1 0-1.45 1 1 0 0 1 1.48 0l2.39 2.55 2.39-2.55a1 1 0 0 1 1.48 0 1.05 1.05 0 0 1 0 1.45l-2.43 2.59 2.43 2.6a1 1 0 0 1-.74 1.13M12 2A10 10 0 0 0 2 12a9.89 9.89 0 0 0 1.25 4.87L2.09 20a1 1 0 0 0 1.27 1.27l3.12-1.16A9.88 9.88 0 0 0 12 22a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/></svg>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900 text-base sm:text-lg">RakAman for Android</h3>
+          <p class="text-slate-400 text-xs">Format .apk &middot; Instalasi manual</p>
+        </div>
+      </div>
+
+      <a href="RakAman-Digital Expiry Assistant.apk" download
+         class="block text-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-2xl shadow-sm transition mb-3">
+        Download Aplikasi Android (.apk)
+      </a>
+      <p class="text-center text-xs text-slate-400 font-mono break-all">RakAman-Digital Expiry Assistant.apk</p>
+    </div>
+  </section>
+
+  <!-- CARA INSTALL -->
+  <section id="faq" class="max-w-5xl mx-auto px-5 sm:px-6 pb-16 md:pb-20">
+    <div class="text-center mb-8 md:mb-10">
+      <p class="font-semibold text-xs uppercase tracking-widest mb-2" style="color:var(--green-600);">Panduan</p>
+      <h2 class="display font-extrabold text-2xl md:text-3xl text-slate-900">Cara Download &amp; Memasang Aplikasi</h2>
+      <p class="text-slate-500 mt-2 text-sm max-w-md mx-auto">Ikuti 4 langkah mudah berikut agar RakAman siap digunakan di HP Android Anda.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-4 md:gap-5">
+      <div class="border border-slate-200 rounded-2xl p-5 md:p-6 flex gap-4" style="background:var(--mint);">
+        <div class="w-9 h-9 shrink-0 bg-green-600 text-white font-bold rounded-full flex items-center justify-center">1</div>
+        <div>
+          <h4 class="font-bold text-slate-900 mb-1">Ketuk Tombol Download</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">Ketuk tombol <b>"Download Aplikasi Android (.apk)"</b> di atas. File akan otomatis tersimpan di folder <b>Download</b> HP Anda.</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl p-5 md:p-6 flex gap-4" style="background:var(--mint);">
+        <div class="w-9 h-9 shrink-0 bg-green-600 text-white font-bold rounded-full flex items-center justify-center">2</div>
+        <div>
+          <h4 class="font-bold text-slate-900 mb-1">Buka File .apk</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">Buka aplikasi <b>File Manager</b> atau notifikasi unduhan, lalu ketuk file <span class="font-mono text-green-700 text-xs break-all">RakAman-Digital Expiry Assistant.apk</span> untuk mulai memasang.</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl p-5 md:p-6 flex gap-4" style="background:var(--mint);">
+        <div class="w-9 h-9 shrink-0 bg-green-600 text-white font-bold rounded-full flex items-center justify-center">3</div>
+        <div>
+          <h4 class="font-bold text-slate-900 mb-1">Izinkan "Sumber Tidak Dikenal"</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">Jika muncul peringatan, ketuk <b>Pengaturan</b>, lalu aktifkan izin <b>"Izinkan dari Sumber Ini"</b> agar instalasi dapat dilanjutkan dengan aman.</p>
+        </div>
+      </div>
+      <div class="border border-slate-200 rounded-2xl p-5 md:p-6 flex gap-4" style="background:var(--mint);">
+        <div class="w-9 h-9 shrink-0 bg-green-600 text-white font-bold rounded-full flex items-center justify-center">4</div>
+        <div>
+          <h4 class="font-bold text-slate-900 mb-1">Ketuk Install lalu Buka</h4>
+          <p class="text-slate-500 text-sm leading-relaxed">Ketuk <b>Install</b>, tunggu proses selesai, lalu ketuk <b>Buka</b>. Ikon RakAman akan muncul di layar utama HP Anda.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 bg-amber-50 border border-amber-200 rounded-2xl p-4 text-xs text-amber-900 max-w-2xl mx-auto text-center">
+      📌 Catatan: Peringatan "Sumber Tidak Dikenal" adalah hal normal untuk aplikasi di luar Play Store. RakAman aman digunakan dan tidak memerlukan akun atau login.
+    </div>
+  </section>
+
+  <!-- THANK YOU -->
+  <section class="px-5 sm:px-6 py-12 md:py-16">
+    <div class="max-w-6xl mx-auto">
+      <img src="9.png" alt="Terima kasih telah mengunduh RakAman.id" class="w-full h-auto max-h-[500px] md:max-h-[600px] object-cover mx-auto rounded-2xl border-4">
+    </div>
+  </section>
+
+  <footer class="text-center py-8 text-slate-400 text-xs border-t border-slate-200 px-5">
+    <p>&copy; 2026 RakAman.id-Digital Expiry Assistant.</p>
+  </footer>
+
+</body>
+</html>
